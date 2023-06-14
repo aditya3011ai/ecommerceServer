@@ -13,10 +13,13 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "desc": {
-      "type": "text"
+      "type": "text",
+      "required": true,
+      "default": "300 GSM Fine Art Matte Paper Elegant Black Frame made up of Premium Quality Synthetic Wood Industry-Recognized High-Quality Print Protective Matte Coating provides a Vivid, Sharp and Non-Reflective Appearance"
     },
     "price": {
       "type": "integer"
@@ -28,14 +31,20 @@
       "inversedBy": "products"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "key": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }
