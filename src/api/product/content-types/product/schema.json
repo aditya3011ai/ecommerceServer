@@ -45,6 +45,10 @@
       "type": "uid",
       "targetField": "title",
       "required": true
+    },
+    "isTopPick": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
