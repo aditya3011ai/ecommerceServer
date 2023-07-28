@@ -81,6 +81,7 @@ module.exports = ({ env }) => {
       useNullAsDefault: true,
     },
   };
+  postgres://admin:prlip0TkN0GwC9w0INjjm8R7BczpETpH@dpg-cj1m6bmnqqla1dhf1dg0-a.oregon-postgres.render.com/db_od9h
 
   return {
     connection: {
